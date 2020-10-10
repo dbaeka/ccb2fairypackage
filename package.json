@@ -1,0 +1,48 @@
+{
+    "name": "ccb2fgui",
+    "version": "0.1.0",
+    "description": "A tool for converting ccb file to fairygui package",
+    "main": "./lib.js",
+    "keywords": [
+        "fairygui", "ccb", "ccb2fgui", "cocos2d-x", "cocosbuilder", "fgui"
+    ],
+    "author": "Delmwin Baeka",
+    "bin": {
+        "ccb2fgui": "./convert.js"
+    },
+    "scripts": {
+        "try":"node convert.js test/test.psd",
+        "lint": "eslint .",
+        "japa": "node japaFile.js",
+        "test": "npm run lint && nyc --reporter=lcov npm run japa",
+        "preversion": "npm test",
+        "precommit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,json}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dbaeka/ccb2fgui.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "husky": "^0.14.3",
+        "lerna": "^3.1.0",
+        "lint-staged": "^7.2.0",
+        "prettier": "^1.12.0",
+        "japa": "^3.1.1"
+    },
+    "dependencies": {
+        "archiver": "^2.1.1",
+        "fs-extra": "^6.0.1",
+        "path": "^0.12.7",
+        "xmlbuilder": "^10.0.0"
+    }
+}
