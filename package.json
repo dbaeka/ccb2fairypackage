@@ -4,14 +4,19 @@
     "description": "A tool for converting ccb file to fairygui package",
     "main": "./lib.js",
     "keywords": [
-        "fairygui", "ccb", "ccb2fgui", "cocos2d-x", "cocosbuilder", "fgui"
+        "fairygui",
+        "ccb",
+        "ccb2fgui",
+        "cocos2d-x",
+        "cocosbuilder",
+        "fgui"
     ],
     "author": "Delmwin Baeka",
     "bin": {
         "ccb2fgui": "./convert.js"
     },
     "scripts": {
-        "try":"node convert.js test/test.psd",
+        "try": "node convert.js test/test.psd",
         "lint": "eslint .",
         "japa": "node japaFile.js",
         "test": "npm run lint && nyc --reporter=lcov npm run japa",
