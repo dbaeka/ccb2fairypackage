@@ -1,4 +1,4 @@
-psd2fgui
+ccb2fgui
 =============
 
 A tool for converting psd file to fairygui package.
