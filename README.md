@@ -1,7 +1,7 @@
-ccb2fgui
+ccb2fairypackage
 =============
 
-A tool for converting psd file to fairygui package.
+A tool for converting CocosBuilder .ccb file to FairyGUI .fairypackage.
 
 ### Setup ###
 
@@ -12,7 +12,7 @@ npm install
 ### Usage ###
 
 ```sh
-node convert test/test.psd
+node convert test/test.ccb
 ```
 
 ### License ###
